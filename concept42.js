@@ -183,7 +183,7 @@ while loop (condition){
 
 // const x = "hello";
 // const y = "hElLo";
-// if (x.toLowerCase() === y.toLocaleLowerCase()){
+// if (x.toUpperCase() === y.toLocaleUpperCase()){
 //     console.log("both are same");
 // }
 // else{
@@ -209,12 +209,12 @@ while loop (condition){
 
 // array Method js
 
-// const x = "My name is Programming Hero";
-// console.log(x);
-// const words = x.split(" ");
-// console.log(words);
-// const y = words.join("/");
-// console.log(y);
+const x = "My name is Programming Hero";
+console.log(x);
+const words = x.split(" ");
+console.log(words);
+const y = words.join("/");
+console.log(y);
 
 // const x = "My name is Programming Hero";
 // console.log(x);

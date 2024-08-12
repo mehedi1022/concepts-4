@@ -228,7 +228,10 @@
 //     else if(info.age <= 0){
 //           return "age should be a positive number"
 //     }
-//     return `My name is : ${info.name}. My age is ${info.age}`;
+//     else{
+//         return `My name is : ${info.name}. My age is ${info.age}`;
+//     }
+    
 // }
 // console.log(details({ name: "Mehedi", age: 25 })); // it will work
 
@@ -325,7 +328,7 @@
 
 // function AnaToVori(Ana){
 //     if(typeof Ana !== "number" || Ana < 0){
-//      return "Please provide a valid integer number"
+//      return "Please provide a valid integer number";
 //     }
 //     else{
 //         const Vori = Ana * 0.0625;
@@ -339,9 +342,11 @@
 
 /*
 ২. [ফাংশন নেম দিতে হবে pandaCost]: তিনটা প্যারামিটার লাগবে। ভিডিও ভালো করে দেখবে।
+
 ১ টি সিঙ্গারা এর দাম - ৭ টাকা
 ১ টি সমুচা এর দাম - ১০ টাকা
 ১ টি জিলাপি এর দাম - ১৫ টাকা
+
 এখন যদি সে বিভিন্ন সংখ্যার সিঙ্গারা, সমুচা আর জিলাপি এর অর্ডার দেয় তাহলে টোটাল কত টাকা খরচ হবে হলো সৈই সংখ্যা রিটার্ন করতে হবে।
 */
 
@@ -367,8 +372,41 @@
 
 /*
 ৩. [ফাংশন নেম দিতে হবে picnicBudget]: প্যারামিটার হিসেবে নিবে কয়জন পিকনিকে যাবে সৈই সংখ্যা। 
+
 যদি ১০০ বা তার কম যায় তাহলে প্রত্যেক এর জন্য খরচ হবে ৫০০০ টাকা করে।
 যদি ১০০ এর বেশি কিন্তু ২০০ এর কম বা সমান যায় তাহলে প্রথম ১০০ জন এর প্রতি জন এর জন্য ৫০০০ টাকা করে দিতে হবে। আর ১০০ এর বেশি (অর্থাৎ ১০১ নম্বর থেকে) যতজন আছে তাদের প্রত্যেক ওই জন্য ৪০০০ টাকা করে দিতে হবে।
+
 আর যদি ২০০ এর বেশি যায় তাহলে প্রথম ১০০ জন এর প্রতি জন এর জন্য ৫০০০ টাকা করে দিতে হবে। আর ১০০ থেকে বেশি যতজন আছে তাদের প্রত্যেকের জন্য ৪০০০ হাজার টাকা করে দিতে হবে। এর ২০০ এর বেশি (অর্থাৎ ২০১ নম্বর থেকে) যতজন আছে তাদের প্রত্যেক এর জন্য ৩০০০ টাকা করে দিতে হবে।
-এখন আমি একটা প্যারামিটার দিবো। সেটা যেকোন সংখ্যা হতে পারে। সেই সংখ্যা অনুসারে তুমি ফাংশন থেকে রিটার্ন দিবে  
+
+এখন আমি একটা প্যারামিটার দিবো। সেটা যেকোন সংখ্যা হতে পারে। সেই সংখ্যা অনুসারে তুমি ফাংশন থেকে রিটার্ন দিবে কতটাকা পিকনিক এর বাজেট হতে হবে। ইনপুট প্যারামিটার এর সংখ্যাটা ১০০ এর কম হতে পারে। ১০০ থেকে ২০০ এর মধ্যে হতে পারে। আবার ২০০ এর বেশিও হতে পারে। তাই সব কেইস ভালো করে চেষ্টা করে নিবে।
 */
+
+// function picnicBudget(perticipents){
+//    if(typeof perticipents !== "number" || perticipents < 0){
+//     return "parameter should be valid positive number"
+//    }
+//    else{
+//     let first100Cost = 0;
+//     let second101To200Cost = 0;
+//     let remainingCost = 0;
+//     let total = 0;
+//     if(perticipents <= 100){
+//         first100Cost = perticipents * 5000;
+//         return first100Cost;
+//     }
+//     else if(perticipents <= 200){
+//      first100Cost = 5000 * 100;
+//      second101To200Cost = (perticipents - 100) * 4000;
+//      total = first100Cost + second101To200Cost;
+//      return total;
+//     }
+//     else{
+//         first100Cost = 5000 * 100;
+//         second101To200Cost = 4000 * 100;
+//         remainingCost = (perticipents - 200) * 3000;
+//         total = first100Cost + second101To200Cost + remainingCost;
+//         return total;
+//     }
+//    }
+// }
+// console.log(picnicBudget(202));  
