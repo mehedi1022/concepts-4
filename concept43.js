@@ -191,29 +191,18 @@
 // }
 // console.log(add(4, "7"));
 
+
 // function add(x, y){
 //     if(typeof x !== "number" || typeof y !== "number"){
 //         return "thik thak number de";
 //     }
 //     return x + y;
 // }
-// console.log(add(4, 7));
+// console.log(add(4, 7)); // it will work
 
-// function details(info){
-//     if(typeof info !== "object" || info.name || info.age){
-//      return "thik thak object daw";
-//     }
-//     return `My name is : ${info.name}. My age is ${info.age}`;
-// }
-// console.log(details({name: "Mehedi"}));
 
-// function details(info){
-//     if(typeof info !== "object" || !info.name || !info.age){
-//      return "thik thak object daw"
-//     }
-//     return `My name is : ${info.name}. My age is ${info.age}`;
-// }
-// console.log(details({name: "Mehedi", age: 26}));
+
+
 
 // function details(info) {
 //     if (typeof info !== "object") {
@@ -235,39 +224,7 @@
 // }
 // console.log(details({ name: "Mehedi", age: 25 })); // it will work
 
-// function details(info) {
-//     if (typeof info !== "object") {
-//         return "thik thak object daw"
-//     }
-//     else if (!info.name || !info.age) {
-//         return "object must contain name and age property"
-//     }
-//     else if(typeof info.name !== "string" || typeof info.age !== "number") {
-//         return "name should be a string, age should be a number"
-//     }
-//     else if(info.age <= 0){
-//           return "age should be a positive number"
-//     }
-//     return `My name is : ${info.name}. My age is ${info.age}`;
-// }
-// console.log(details("hello"));
 
-// function details(info) {
-//         if (typeof info !== "object") {
-//             return "thik thak object daw"
-//         }
-//         else if (!info.name || !info.age) {
-//             return "object must contain name and age property"
-//         }
-//         else if(typeof info.name !== "string" || typeof info.age !== "number") {
-//             return "name should be a string, age should be a number"
-//         }
-//         else if(info.age <= 0){
-//               return "age should be a positive number"
-//         }
-//         return `My name is : ${info.name}. My age is ${info.age}`;
-//     }
-//     console.log(details({ name: "Mehedi" }));
 
 // basic problems js
 
